@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Selfie Logo</title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/lodash.min.js"></script>
+    <style>
+    body {
+        background-color: #000000;
+        margin: 0;
+    }
+
+    #wrapper {
+        width: 480px;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .pixel {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .on {
+        background-color: #FFFFFF;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="pixel" id="pixel-1"></div>
+        <div class="pixel" id="pixel-2"></div>
+        <div class="pixel" id="pixel-3"></div>
+        <div class="pixel" id="pixel-4"></div>
+        <div class="pixel" id="pixel-5"></div>
+        <div class="pixel" id="pixel-6"></div>
+        <div class="pixel" id="pixel-7"></div>
+        <div class="pixel" id="pixel-8"></div>
+        <div class="pixel" id="pixel-9"></div>
+        <div class="pixel" id="pixel-10"></div>
+        <div class="pixel" id="pixel-11"></div>
+        <div class="pixel" id="pixel-12"></div>
+        <div class="pixel" id="pixel-13"></div>
+        <div class="pixel" id="pixel-14"></div>
+        <div class="pixel" id="pixel-15"></div>
+        <div class="pixel" id="pixel-16"></div>
+        <div class="pixel" id="pixel-17"></div>
+        <div class="pixel" id="pixel-18"></div>
+        <div class="pixel" id="pixel-19"></div>
+        <div class="pixel" id="pixel-20"></div>
+        <div class="pixel" id="pixel-21"></div>
+        <div class="pixel" id="pixel-22"></div>
+        <div class="pixel" id="pixel-23"></div>
+        <div class="pixel" id="pixel-24"></div>
+        <div class="pixel" id="pixel-25"></div>
+        <div class="pixel" id="pixel-26"></div>
+        <div class="pixel" id="pixel-27"></div>
+        <div class="pixel" id="pixel-28"></div>
+        <div class="pixel" id="pixel-29"></div>
+        <div class="pixel" id="pixel-30"></div>
+        <div class="pixel" id="pixel-31"></div>
+        <div class="pixel" id="pixel-32"></div>
+        <div class="pixel" id="pixel-33"></div>
+        <div class="pixel" id="pixel-34"></div>
+        <div class="pixel" id="pixel-35"></div>
+        <div class="pixel" id="pixel-36"></div>
+        <div class="pixel" id="pixel-37"></div>
+        <div class="pixel" id="pixel-38"></div>
+        <div class="pixel" id="pixel-39"></div>
+        <div class="pixel" id="pixel-40"></div>
+        <div class="pixel" id="pixel-41"></div>
+        <div class="pixel" id="pixel-42"></div>
+        <div class="pixel" id="pixel-43"></div>
+        <div class="pixel" id="pixel-44"></div>
+        <div class="pixel" id="pixel-45"></div>
+        <div class="pixel" id="pixel-46"></div>
+        <div class="pixel" id="pixel-47"></div>
+        <div class="pixel" id="pixel-48"></div>
+        <div class="pixel" id="pixel-49"></div>
+        <div class="pixel" id="pixel-50"></div>
+        <div class="pixel" id="pixel-51"></div>
+        <div class="pixel" id="pixel-52"></div>
+        <div class="pixel" id="pixel-53"></div>
+        <div class="pixel" id="pixel-54"></div>
+        <div class="pixel" id="pixel-55"></div>
+        <div class="pixel" id="pixel-56"></div>
+        <div class="pixel" id="pixel-57"></div>
+        <div class="pixel" id="pixel-58"></div>
+        <div class="pixel" id="pixel-59"></div>
+        <div class="pixel" id="pixel-60"></div>
+        <div class="pixel" id="pixel-61"></div>
+        <div class="pixel" id="pixel-62"></div>
+        <div class="pixel" id="pixel-63"></div>
+        <div class="pixel" id="pixel-64"></div>
+        <div class="pixel" id="pixel-65"></div>
+        <div class="pixel" id="pixel-66"></div>
+        <div class="pixel" id="pixel-67"></div>
+        <div class="pixel" id="pixel-68"></div>
+        <div class="pixel" id="pixel-69"></div>
+        <div class="pixel" id="pixel-70"></div>
+        <div class="pixel" id="pixel-71"></div>
+        <div class="pixel" id="pixel-72"></div>
+        <div class="pixel" id="pixel-73"></div>
+        <div class="pixel" id="pixel-74"></div>
+        <div class="pixel" id="pixel-75"></div>
+        <div class="pixel" id="pixel-76"></div>
+        <div class="pixel" id="pixel-77"></div>
+        <div class="pixel" id="pixel-78"></div>
+        <div class="pixel" id="pixel-79"></div>
+        <div class="pixel" id="pixel-80"></div>
+        <div class="pixel" id="pixel-81"></div>
+        <div class="pixel" id="pixel-82"></div>
+        <div class="pixel" id="pixel-83"></div>
+        <div class="pixel" id="pixel-84"></div>
+        <div class="pixel" id="pixel-85"></div>
+        <div class="pixel" id="pixel-86"></div>
+        <div class="pixel" id="pixel-87"></div>
+        <div class="pixel" id="pixel-88"></div>
+        <div class="pixel" id="pixel-89"></div>
+        <div class="pixel" id="pixel-90"></div>
+        <div class="pixel" id="pixel-91"></div>
+        <div class="pixel" id="pixel-92"></div>
+        <div class="pixel" id="pixel-93"></div>
+        <div class="pixel" id="pixel-94"></div>
+        <div class="pixel" id="pixel-95"></div>
+        <div class="pixel" id="pixel-96"></div>
+        <div class="pixel" id="pixel-97"></div>
+        <div class="pixel" id="pixel-98"></div>
+        <div class="pixel" id="pixel-99"></div>
+        <div class="pixel" id="pixel-100"></div>
+        <div class="pixel" id="pixel-101"></div>
+        <div class="pixel" id="pixel-102"></div>
+        <div class="pixel" id="pixel-103"></div>
+        <div class="pixel" id="pixel-104"></div>
+        <div class="pixel" id="pixel-105"></div>
+        <div class="pixel" id="pixel-106"></div>
+        <div class="pixel" id="pixel-107"></div>
+        <div class="pixel" id="pixel-108"></div>
+        <div class="pixel" id="pixel-109"></div>
+        <div class="pixel" id="pixel-110"></div>
+        <div class="pixel" id="pixel-111"></div>
+        <div class="pixel" id="pixel-112"></div>
+        <div class="pixel" id="pixel-113"></div>
+        <div class="pixel" id="pixel-114"></div>
+        <div class="pixel" id="pixel-115"></div>
+        <div class="pixel" id="pixel-116"></div>
+        <div class="pixel" id="pixel-117"></div>
+        <div class="pixel" id="pixel-118"></div>
+        <div class="pixel" id="pixel-119"></div>
+        <div class="pixel" id="pixel-120"></div>
+        <div class="pixel" id="pixel-121"></div>
+        <div class="pixel" id="pixel-122"></div>
+        <div class="pixel" id="pixel-123"></div>
+        <div class="pixel" id="pixel-124"></div>
+        <div class="pixel" id="pixel-125"></div>
+        <div class="pixel" id="pixel-126"></div>
+        <div class="pixel" id="pixel-127"></div>
+        <div class="pixel" id="pixel-128"></div>
+        <div class="pixel" id="pixel-129"></div>
+        <div class="pixel" id="pixel-130"></div>
+        <div class="pixel" id="pixel-131"></div>
+        <div class="pixel" id="pixel-132"></div>
+        <div class="pixel" id="pixel-133"></div>
+        <div class="pixel" id="pixel-134"></div>
+        <div class="pixel" id="pixel-135"></div>
+        <div class="pixel" id="pixel-136"></div>
+        <div class="pixel" id="pixel-137"></div>
+        <div class="pixel" id="pixel-138"></div>
+        <div class="pixel" id="pixel-139"></div>
+        <div class="pixel" id="pixel-140"></div>
+        <div class="pixel" id="pixel-141"></div>
+        <div class="pixel" id="pixel-142"></div>
+        <div class="pixel" id="pixel-143"></div>
+        <div class="pixel" id="pixel-144"></div>
+        <div class="pixel" id="pixel-145"></div>
+        <div class="pixel" id="pixel-146"></div>
+        <div class="pixel" id="pixel-147"></div>
+        <div class="pixel" id="pixel-148"></div>
+        <div class="pixel" id="pixel-149"></div>
+        <div class="pixel" id="pixel-150"></div>
+        <div class="pixel" id="pixel-151"></div>
+        <div class="pixel" id="pixel-152"></div>
+        <div class="pixel" id="pixel-153"></div>
+        <div class="pixel" id="pixel-154"></div>
+        <div class="pixel" id="pixel-155"></div>
+        <div class="pixel" id="pixel-156"></div>
+        <div class="pixel" id="pixel-157"></div>
+        <div class="pixel" id="pixel-158"></div>
+        <div class="pixel" id="pixel-159"></div>
+        <div class="pixel" id="pixel-160"></div>
+    </div>
+    <script>
+    var arr = _.shuffle([6, 7, 8, 9, 10, 11, 20, 21, 22, 25, 26, 27, 28, 29, 35, 37, 40, 41, 42, 43, 44, 46, 50, 53, 55, 56, 57, 58, 59, 60, 63, 65, 69, 70, 71, 72, 73, 74, 75, 76, 80, 81, 86, 87, 88, 89, 90, 91, 96, 98, 102, 103, 104, 105, 106, 107, 111, 115, 120, 121, 126, 132, 133, 140, 141, 150, 151, 152, 153, 154, 155]);
+
+    var loop = function(i) {
+        setTimeout(function () {
+            $("#pixel-" + arr[i]).addClass("on");
+            i++;
+            if (i < arr.length) {
+                loop(i);
+            } else {
+                return false;
+            }
+        }, _.random(10, 100));
+    }
+    loop(0);
+    </script>
+</body>
+
+</html>

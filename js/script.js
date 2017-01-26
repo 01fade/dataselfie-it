@@ -12,9 +12,9 @@
 	            templateUrl: 'pages/about.html',
 	            controller: 'aboutController'
 	        })
-	        .when('/demo', {
-	            title: 'Demo',
-	            templateUrl: 'pages/demo.html',
+	        .when('/journey', {
+	            title: 'Journey',
+	            templateUrl: 'pages/journey.html',
 	            controller: 'demoController'
 	        })
 	        .when('/download', {
@@ -64,14 +64,6 @@
 
 	dataSelfieItApp.controller('mainController', function($scope) {
 	    $scope.message = '';
-	});
-
-	dataSelfieItApp.controller('aboutController', function($scope) {
-	    $scope.message = 'Data Selfie';
-	});
-
-	dataSelfieItApp.controller('demoController', function($scope) {
-	    $scope.message = 'Check out this video below of how it works for example with Facebook on your desktop.';
 	});
 
 	dataSelfieItApp.controller('downloadController', function($scope) {
@@ -127,10 +119,6 @@
 	    loadTl();
 
 	    $scope.message = 'Sharing is caring.';
-	});
-
-	dataSelfieItApp.controller('contactController', function($scope) {
-	    $scope.message = 'Contact us at';
 	});
 
 	dataSelfieItApp.controller('faqController', ['$scope', function($scope) {
