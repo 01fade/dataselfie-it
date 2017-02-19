@@ -49,7 +49,8 @@
 	        });
 	});
 
-	dataSelfieItApp.run(['$rootScope', function($rootScope) {
+	dataSelfieItApp.run(['$rootScope', '$anchorScroll', function($rootScope, $anchorScroll) {
+	    $anchorScroll.yOffset = 20;
 	    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
 	        $rootScope.title = current.$$route.title;
 	    });
@@ -63,6 +64,14 @@
 	}]);
 
 	dataSelfieItApp.controller('mainController', function($scope) {
+	    $scope.message = '';
+	});
+
+	dataSelfieItApp.controller('firstController', function($scope) {
+	    $scope.message = '';
+	});
+
+	dataSelfieItApp.controller('contactController', function($scope) {
 	    $scope.message = '';
 	});
 
@@ -121,87 +130,38 @@
 	    $scope.message = '';
 	});
 
-	dataSelfieItApp.controller('faqController', ['$scope', function($scope) {
+	dataSelfieItApp.controller('faqController', ['$scope', '$anchorScroll', '$location', function($scope, $anchorScroll, $location) {
 	    $scope.message = '';
 
-	    //This is the Top Button Code
-	    $(document).ready(function() {
-			// Show or hide the sticky footer button
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 200) {
-					$('.go-top').fadeIn(200);
-				} else {
-					$('.go-top').fadeOut(200);
-				}
-			});
+	    var body = $('body');
 
-			// Animate the scroll to top
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				$('html, body').animate({scrollTop: 0}, 300);
-			});
+	    // // Show or hide the sticky footer button
+	    $(window).scroll(function() {
+	        if ($(this).scrollTop() > 200) {
+	            $('.go-top').fadeIn(200);
+	        } else {
+	            $('.go-top').fadeOut(200);
+	        }
+	    });
 
-			$('#faqToAnchor').click(function(event) {
-				event.preventDefault();
-				console.log('clicked faq-link');
-				$('html, body').animate({scrollTop: $('#faq-anchor').offset().top}, 300);
-			});
+	    // Animate the scroll to top
+	    $('.go-top').click(function(e) {
+	        e.preventDefault();
+	        body.animate({ scrollTop: 0 }, 300);
+	    });
 
-			$('#termsToAnchor').click(function(event) {
-				event.preventDefault();
-				console.log('clicked terms-link');
-				$('html, body').animate({scrollTop: $('#terms-anchor').offset().top}, 300);
-			});
-		});
-	    //
-
-	    jQuery(document).ready(function($){
-			//update these values if you change these breakpoints in the style.css file (or _layout.scss if you use SASS)
-			var MqM= 768,
-				MqL = 1024;
-
-			var faqsSections = $('.cd-faq-group'),
-				faqTrigger = $('.cd-faq-trigger'),
-				faqsContainer = $('.cd-faq-items'),
-				faqsCategoriesContainer = $('.cd-faq-categories'),
-				faqsCategories = faqsCategoriesContainer.find('a'),
-				closeFaqsContainer = $('.cd-close-panel');
-
-			//select a faq section
-			faqsCategories.on('click', function(event){
-				event.preventDefault();
-				var selectedHref = $(this).attr('href'),
-					target= $(selectedHref);
-				if( $(window).width() < MqM) {
-					faqsContainer.scrollTop(0).addClass('slide-in').children('ul').removeClass('selected').end().children(selectedHref).addClass('selected');
-					closeFaqsContainer.addClass('move-left');
-					$('body').addClass('cd-overlay');
-				} else {
-			        $('body,html').animate({ 'scrollTop': target.offset().top - 19}, 200);
-				}
-			});
-
-			//close faq lateral panel - mobile only
-			$('body').bind('click touchstart', function(event){
-				if( $(event.target).is('body.cd-overlay') || $(event.target).is('.cd-close-panel')) {
-					closePanel(event);
-				}
-			});
-			faqsContainer.on('swiperight', function(event){
-				closePanel(event);
-			});
-
-			//show faq content clicking on faqTrigger
-			faqTrigger.on('click', function(event){
-				event.preventDefault();
-				$(this).next('.cd-faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
-			});
-
-		});
-
-
-
-
+	    $scope.qLinkClick = function(obj) {
+	        var newHash = obj.target.attributes.data.value;
+	        if ($location.hash() !== newHash) {
+	            // set the $location.hash to `newHash` and
+	            // $anchorScroll will automatically scroll to it
+	            $location.hash(newHash);
+	        } else {
+	            // call $anchorScroll() explicitly,
+	            // since $location.hash hasn't changed
+	            $anchorScroll();
+	        }
+	    }
 	}]);
 
 	dataSelfieItApp.directive('iframeOnload', [function() {
