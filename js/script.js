@@ -118,7 +118,7 @@
 	    }
 	    loadTl();
 
-	    $scope.message = 'Sharing is caring.';
+	    $scope.message = '';
 	});
 
 	dataSelfieItApp.controller('faqController', ['$scope', function($scope) {
