@@ -46,6 +46,9 @@
 	            title: 'The First',
 	            templateUrl: 'pages/first.html',
 	            controller: 'firstController'
+	        })
+	        .otherwise({
+	            redirectTo: "/"
 	        });
 	});
 
