@@ -1,0 +1,68 @@
+<section class="cd-faq">
+    <div class="cd-faq-items">
+        <h2 id='terms'>TERMS OF USE</h2>
+        <ul id="basics" class="cd-faq-group">
+            <li>
+                <h1>Privacy Policy</h1>
+                <div class="cd-faq-content">
+                    <p>Data Selfie is a way for you to have your consumption data on facebook.com analyzed. In order to do so the extension tracks: clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, and time spent on Facebook overall. </p>
+                    <p>The permissions that the extension is asking for is for local (on your machine) data processing and sending anonymous requests to the Data Selfie server (from now on only referred to as "the server). That means the above mentioned data is sent, without your identity (like your name or Facebook ID), to the server and the analysis (e.g. personality prediction) is sent back to you, the user. No records (no data base, no logs) are kept on the server of your sent data (input) nor your analysis results (output). The server keeps your IP address for 24 hours to make sure nobody abuses the server with too many requests.</p>
+                    <p>In total there are 4 different requests to the Data Selfie server with predicted analysis results being sent back to the user's extension.</p>
+                    <ol>
+                        <li>Alchemy API, to process keywords, entities, concepts
+                            <ul>
+                                <li>- All texts from the posts you have looked at/spent time on in your feed are sent to the server as one string of text.</li>
+                                <li>- This is data does not include any identifier that makes the user personally identifiable (e.g. name, Facebook ID/profile link).</li>
+                                <li>- The server then requests analysis by a third-party service.</li>
+                                <li>- In this case it's IBM Watson who might use the input and output data for improving of their services. Data Selfie opts out of logging the request data and the result data by servers at IBM Watson (<a href="https://console.bluemix.net/docs/services/watson/getting-started-logging.html#controlling-request-logging-for-watson-services">more information</a>).</li>
+                            </ul>
+                        </li>
+                        <li>Personality Insights API, to predict personality; shopping, health and other preferences
+                            <ul>
+                                <li>- Anything that you have typed on facebook.com, even if you didn't send or publish it is sent to the server as one string of text.</li>
+                                <li>- This is data does not include any identifier that makes the user personally identifiable (e.g. name, Facebook ID/profile link).</li>
+                                <li>- The server then requests analysis by a third-party service.</li>
+                                <li>- In this case it's IBM Watson who might use the input and output data for improving of their services. Data Selfie opts out of logging the request data and the result data by servers at IBM Watson (<a href="https://console.bluemix.net/docs/services/watson/getting-started-logging.html#controlling-request-logging-for-watson-services">more information</a>).</li>
+                            </ul>
+                        </li>
+                        <li>Apply Magic Sauce API, to predict personality, religious orientation, political orientation, psychological gender, leadership quality, intelligence, life satisfaction
+                            <ul>
+                                <li>- The Facebook ids of pages that you have looked at in your feed are sent to the server as an array of strings.</li>
+                                <li>- This is data does not include any identifier that makes the user personally identifiable (e.g. name, Facebook ID/profile link).</li>
+                                <li>- The server then requests analysis by a third-party service.</li>
+                                <li>- In this case it's University of Cambridge who might use the input and output data for improving of their services.</li>
+                            </ul>
+                        </li>
+                        <li>Object Detection API
+                            <ul>
+                                <li>- The urls of the images from your feed are sent to the server as an array of strings.</li>
+                                <li>- This is data does not include any identifier that makes the user personally identifiable (e.g. name, Facebook ID/profile link).</li>
+                                <li>- The server then requests analysis by a separate (more powerful) Data Selfie server </li>
+                                <li>- This service is built with open source code.</li>
+                                <li>- Input and output data is not processed any further and not used to improve this API, it is also not used for any commercial purposes or research purposes.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h1>Relationship to Facebook</h1>
+                <div class="cd-faq-content">
+                    <p>Data Selfie is not using Facebook’s API. The extension looks at the rendered front-end (the DOM) of the user's Facebook page in the browser – the HTML elements and their content – and with JavaScript the browser extension can detect when you scroll, when you type and when you click something.</p>
+                    <p>Data Selfie provides Facebook users with (1) the kind of data Facebook could be tracking about them and (2) the kind of personality insights Facebook could be generating on them by using machine learning algorithms. This is not an effort to reverse engineer or replicate Facebook's algorithm, it's only an attempt to show what is possible with available algorithms.</p>
+                </div>
+            </li>
+            <li>
+                <h1>Policy changes</h1>
+                <div class="cd-faq-content">
+                    <p>There is a possibility that this Privacy Policy will be adapted in the future, to clarify or modify it in response to feature changes or user feedback. Please check the FAQ and privacy sections periodically for changes. You can refer to the Last updated timestamp at the bottom of the page.</p>
+                </div>
+            </li>
+        </ul>
+        <!-- cd-faq-group -->
+    </div>
+    <!-- cd-faq-items -->
+    <p>Last updated: November 9, 2017</p>
+</section>
+<a href="#" class="go-top">Go Top</a>

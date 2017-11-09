@@ -1,5 +1,3 @@
-var submitted = false;
-
 function init () {
 	console.log(window.location.hash);
 	if (window.location.hash === ""){
@@ -22,14 +20,6 @@ function init () {
 
 	if (window.location.hash !== "") {
 		$("#logo").fadeIn();
-	}
-}
-
-function submitRedirect() {
-	if(submitted){
-		$("form").hide();
-		$("#thanks").fadeIn();
-		submitted = false;
 	}
 }
 

@@ -1,56 +1,62 @@
 <section class="cd-faq">
     <div class="cd-faq-items">
-        <p>Here you find the answers to our <a ng-click="qLinkClick($event)" data="faq">most asked questions</a>, please check here first before you email us at <a href="mailto:support@dataselfie.it">support@dataselfie.it</a>.</p>
-        <p>Our <a ng-click="qLinkClick($event)" data="terms">Basic Terms of Use</a> are at the bottom of the page.</p>
+        <p>Please check here first before you email <a href="mailto:support@dataselfie.it">support@dataselfie.it</a>.</p>
         <br>
         <h2 id='faq'>Frequently Asked Questions</h2>
         <ul id="faq" class="cd-faq-group">
             <li>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="open-source">Is Data Selfie open source?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="how-does-it-work">How does Data Selfie work?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-tracked">What data does the extension track?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="store-data">Will you store my data somewhere?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="apis">What machine learning API services are you using?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-to-api">What data does the extension send to the API?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="apis">What third-party machine learning API services are you using?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="api-with-data">What will the third-party API Services do with my data?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="updated-predictions">How often will I see updated predictions?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="play-with-algorithms">Can I play with the algorithms you are using?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-tracked">What data does the extension track?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="languages">What languages are supported?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-to-api">What data does the extension send to the API?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="api-with-data">What will your API Services do with my data?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="no-ca">Do you have any connections to Cambridge Analytica?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="fb-api">Are you using Facebook’s Graph API?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="permissions">What permissions does the extension require?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="export">How do I export my data?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="import">How do I import my data?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="delete">How do I delete my data?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="browser-requirement">What browser do I need?</a></p>
-                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="browser-expansion">Will you expand to other browsers, e.g. Firefox?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="manage-data">What can I do with my tracked data?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="mobile">Will you make a mobile version?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="free">Is Data Selfie free?</a></p>
+                <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="open-source">Is Data Selfie open source?</a></p>
                 <p><a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="funding">How is Data Selfie funded?</a></p>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="open-source" id="open-source">Is Data Selfie open source?</a>
-                <div class="cd-faq-content">
-                    <p>Yes! We believe in an open, free, and democratic internet. Our intention with this project is to be totally transparent. Data Selfie will never use your data for research purposes or for commercial purposes as we don’t store it in a data base. You can check out our code at our <a href="https://github.com/d4t4x/">GitHub account</a>.
-                    </p>
-                </div>
             </li>
             <li>
                 <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="how-does-it-work" id="how-does-it-work">How does Data Selfie work?</a>
                 <div class="cd-faq-content">
-                    <p>When you install the Data Selfie Chrome Extension, it will run in the background as you use Facebook on your desktop. Data Selfie will record your active and passive activity. The extension will record: clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, and time spent on Facebook overall. The more you use Facebook the more data is recorded. You can look at the Data Selfie dashboard and get a sense of what Facebook could know about your personality. We gather these personality insights by using 2 machine learning APIs: <a href="https://applymagicsauce.com/">Apply Magic Sauce</a> and <a href="https://console.ng.bluemix.net/catalog/?category=watson">IBM Watson</a>.
+                    <p>When you install the Data Selfie browser extension, it will run in the background as you use Facebook on your desktop. Data Selfie will record your interactions on the platform. The extension will record: clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, and time spent on Facebook overall. The more you use Facebook the more data is recorded. You can look at the Data Selfie dashboard and get a sense of what Facebook could know about your personality based on this data. The extension shows predictive analytics and insights by using machine learning APIs: <a href="https://applymagicsauce.com/">Apply Magic Sauce</a> and <a href="https://console.ng.bluemix.net/catalog/?category=watson">IBM Watson</a>. So, part of the tracked data needs to be processed on the server, in order to so it is sent without any indicators, like name or Facebook ID, that are tied to you to the Data Selfie server.
                     </p>
+                    <p>Go to the <a href="#privacy">privacy tab</a> for more specific information about structure and process that affect your personal data.</p>
+                </div>
+            </li>
+            <li>
+                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-tracked" id="data-tracked">What data does the extension track?</a>
+                <div class="cd-faq-content">
+                    <p>The extension tracks: clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, and time spent on Facebook overall.
+                    </p>
+                    <p>Go to the <a href="#privacy">privacy tab</a> for more specific information about structure and process that affect your personal data.</p>
                 </div>
             </li>
             <li>
                 <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="store-data" id="store-data">Will you store my data somewhere?</a>
                 <div class="cd-faq-content">
-                    <p>No. Your data is stored locally on your own computer. We do not store your data. We pass only the necessary data through our servers to the APIs - without your personal information such as name, gender, etc. While we trust these two third-parties, they might store anonymized data or use the results to improve their services.
+                    <p>Your data is stored locally on your own computer. The Data Selfie server does not keep a data base of user data. It only passes the necessary data to the APIs - without your personal information such as name, gender, etc. The third-party services might log or store anonymized data or use the results to improve their services, but again they can't identify you as you, as no data about you specifically is sent along.
                     </p>
+                    <p>Go to the <a href="#privacy">privacy tab</a> for more specific information about structure and process that affect your personal data.</p>
                 </div>
             </li>
             <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="apis" id="apis">What machine learning API services are you using?</a>
+                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-to-api" id="data-to-api">What data does the extension send to the API?</a>
+                <div class="cd-faq-content">
+                    <p>Whatever you type in the Facebook platform, the Like IDs of pages you have interacted with the most, the texts and images in the posts you have looked at will be send to the Data Selfie server and then directly (without storing that data in a data base) to third-party APIs. Your name, Facebook ID or profile link, are not sent anywhere.
+                    </p>
+                    <p>Go to the <a href="#privacy">privacy tab</a> for more specific information about structure and process that affect your personal data.</p>
+                </div>
+            </li>
+            <li>
+                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="apis" id="apis">What third-party machine learning API services are you using?</a>
                 <div class="cd-faq-content">
                     <p>
                         We use two machine learning API services:
@@ -59,14 +65,25 @@
                         <br>
                         <br> Here is the <a href="http://www.pnas.org/content/110/15/5802.full.pdf?with-ds=yes">white paper</a> that is the basis for the API:
                         <br>
-                        <br> &nbsp;2. We are using <a href="https://console.ng.bluemix.net/catalog/?category=watson">IBM Watson</a>. Specifically we are using the Personality Insights, Alchemy API, and Tone Analyzer. We may use the Visual Recognition and Language Translation in further releases.
+                        <br> &nbsp;2. We are using <a href="https://console.ng.bluemix.net/catalog/?category=watson">IBM Watson</a>. Specifically we are using the Personality Insights and Alchemy API. We may use the Visual Recognition and Language Translation in further releases.
                     </p>
+                </div>
+            </li>
+            </li>
+            <li>
+                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="api-with-data" id="api-with-data">What will the third-party API Services do with my data?</a>
+                <div class="cd-faq-content">
+                    <p>It is common for them to use anonymized data to improve their models to make better predictions in the future.
+                        <br>
+                        <br> For the IBM machine learning, we have "opted out" so that the requests from the Data Selfie server are not logged and not used for training their models. You can read more here: <a href="https://console.bluemix.net/docs/services/watson/getting-started-logging.html#controlling-request-logging-for-watson-services">Controlling Request Logging for Watson Services</a>
+                    </p>
+                    <p>Go to the <a href="#privacy">privacy tab</a> for more specific information about structure and process that affect your personal data.</p>
                 </div>
             </li>
             <li>
                 <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="updated-predictions" id="updated-predictions">How often will I see updated predictions?</a>
                 <div class="cd-faq-content">
-                    <p>It was important to us to provide Data Selfie for free to the public. All the costs required to keep the project going are coming out of our pockets. With that in mind, in order to keep costs in check, we have to limit the daily API calls so that as many people as possible can use Data Selfie. We hope people will be nice and courteous to the community so that Data Selfie can be available for all. Updated predictions will depend on your Facebook usage and depend on whether or not there is significant change to your data that makes a new predictions plausible.
+                    <p>Data Selfie is a free tool that is funded by grants. In order to keep costs in check, we have to limit the daily API calls so that as many people as possible can use Data Selfie. We hope people will be nice and courteous to the community so that Data Selfie can be available for all. Updated predictions will depend on your Facebook usage and depend on whether or not there is significant change to your data that makes a new predictions plausible.
                         <br> If you really want to play with this more, refer to the next question.
                     </p>
                 </div>
@@ -85,169 +102,70 @@
                 </div>
             </li>
             <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-tracked" id="data-tracked">What data does the extension track?</a>
-                <div class="cd-faq-content">
-                    <p>The extension tracks: clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, and time spent on Facebook overall.
-                    </p>
-                </div>
-            </li>
-            <li>
                 <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="languages" id="languages">What languages are supported?</a>
                 <div class="cd-faq-content">
                     <p>To analyze the content in the posts you look at Data Selfie only supports English, German, French, Italian, Portuguese, Russian, Spanish and Swedish. We use IBM's <a href="http://www.ibm.com/watson/developercloud/doc/alchemylanguage/">AlchemyLanguage</a> service for that. Predictions based on the text you type, only English, Spanish, Japanese and Arabic are supported. We use IBM's <a href="https://www.ibm.com/watson/developercloud/doc/personality-insights/basics.shtml#overviewLanguage">Personality Insights</a> service for that. This might change in the future.
                     </p>
                 </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="data-to-api" id="data-to-api">What data does the extension send to the API?</a>
-                <div class="cd-faq-content">
-                    <p>Whatever you type in the Facebook platform and the Like IDs of pages you have interacted with the most will be send to our server and then directly to the API. The extension does not collect personal data from your Facebook profile, nor does it collect any ID. So, since there is no record of it, no personally identifiable information will be sent anywhere.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="api-with-data" id="api-with-data">What will your API Services do with my data?</a>
-                <div class="cd-faq-content">
-                    <p>It is common for them to use anonymized data to improve their models to make better predictions in the future.
-                        <br>
-                        <br> For the IBM machine learning, we have "opted out" so that our requests are not logged and not used for training their models. You can read more here: <a href="http://www.ibm.com/watson/developercloud/doc/getting_started/gs-logging.shtml">Controlling Request Logging for Watson Services</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="no-ca" id="no-ca">Do you have any connections to Cambridge Analytica?</a>
-                <div class="cd-faq-content">
-                    <p>There has been a wide spread discussion about how Cambridge Analytica might have used psychometrics (Big 5 or OCEAN) in their efforts in the Brexit referendum and the US Election 2016 (see articles from e.g. <a href="https://motherboard.vice.com/en_us/article/how-our-likes-helped-trump-win">Motherboard</a> and <a href="https://www.dasmagazin.ch/2016/12/03/ich-habe-nur-gezeigt-dass-es-die-bombe-gibt/">Das Magazin</a>). We have no connection to this company and will never have. The University of Cambridge Psychometrics Centre has released <a href="http://www.psychometrics.cam.ac.uk/about-us/media-reports/statement-on-politics">a statement</a> to clarify that they are in no way affiliated with Cambridge Analytica.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="fb-api" id="fb-api">Are you using Facebook’s Graph API?</a>
-                <div class="cd-faq-content">
-                    <p>We are not using Facebook’s API. What we do is look at the rendered front-end (the DOM) of the Facebook page in your browser – the HTML elements and their content – and with JavaScript the browser extension can detect when you scroll, when you type and when you click something.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="permissions" id="permissions">What permissions does the extension require?</a>
-                <div class="cd-faq-content">
-                    <p>The extension will ask you for the following permissions: “Read and change your data on api.dataselfie.it and facebook.com” and “Manage your downloads”. Note: “Manage your downloads” is for backing up your data into one single file on your computer.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="export" id="export">How do I export my data?</a>
-                <div class="cd-faq-content">
-                    <p>You can export your data by clicking the Data Selfie eye logo in your Chrome browser and selecting "Export Your Data" from the drop-down menu. A JSON file will automatically download into your "Downloads" folder (on a Mac).
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="import" id="import">How do I import my data?</a>
-                <div class="cd-faq-content">
-                    <p>You can import your data by clicking the Data Selfie eye logo in your Chrome browser and selecting "Import Your Data" from the drop-down menu. Right now we only support JSON format in the same way the exported JSON is structured. We are looking into how we could support the data you can download directly from Facebook.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="delete" id="delete">How do I delete my data?</a>
-                <div class="cd-faq-content">
-                    <p>You can delete your data by clicking the Data Selfie eye logo in your Chrome browser and selecting "Delete Your Data" from the drop-down menu. Note your data is not saved anyway else on your machine, so it will be gone forever.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="browser-requirement" id="browser-requirement">What browser do I need?</a>
-                <div class="cd-faq-content">
-                    <p>For a good experience, you need Google Chrome 40 or higher. We have only really tested the extension on a Mac.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="browser-expansion" id="browser-expansion">Will you expand to other browsers, e.g. Firefox?</a>
-                <div class="cd-faq-content">
-                    <p>We believe in an open and democratic internet and hope to have the bandwidth to expand to more browsers. Firefox is first on our list for expansion. The decision to use Chrome was based on the idea that it is the most popular browser and we could reach many more people on this platform.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="mobile" id="mobile">Will you make a mobile version?</a>
-                <div class="cd-faq-content">
-                    <p>We recognize that the vast majority of social media usage is done on a mobile device. From the beginning of this project we explored making a mobile version. However, there is no way for us to access Facebook’s native mobile application. (And that is a good thing!) Therefore, the only way to make a mobile version would be to launch our own browser as a native application and implement Data Selfie features. We feel that this approach is not in line with our mission of providing exceptional user experience design. Thus, at this time, we have no intention of making a mobile version.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="free" id="free">Is Data Selfie free?</a>
-                <div class="cd-faq-content">
-                    <p>Data Selfie has been designed as a open source, free tool that aims to create awareness in society about the erosion of privacy. From the beginning we intended the tool to be used at no cost.</p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="funding" id="funding">How is Data Selfie funded?</a>
-                <div class="cd-faq-content">
-                    <p> At this time our funding is courtesy of a grant received by the <a href="http://nycmedialab.org/">New York City Media Lab</a>. Additional subsidies to the IBM Watson API have been provided by the <a href="https://developer.ibm.com/startups/">IBM Global Entrepreneur Program</a>. Grant funding is accessed through highly competitive processes, and thus we cannot guarantee that we will have continuous funding to maintain Data Selfie. Therefore, we inform the end user that we may eventually need to require donations to continue to maintain, improve and sustain the tool in the long-term. We believe that donations are fair and democratic and in the spirit of the open source community.
-                        <br>
-                    </p>
-                </div>
-            </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="no-ca" id="no-ca">Do you have any connections to Cambridge Analytica?</a>
+                    <div class="cd-faq-content">
+                        <p>There has been a wide spread discussion about how Cambridge Analytica might have used psychometrics (Big 5 or OCEAN) in their efforts in the Brexit referendum and the US Election 2016 (see articles from e.g. <a href="https://motherboard.vice.com/en_us/article/how-our-likes-helped-trump-win">Motherboard</a> and <a href="https://www.dasmagazin.ch/2016/12/03/ich-habe-nur-gezeigt-dass-es-die-bombe-gibt/">Das Magazin</a>). We have no connection to this company and will never have. The University of Cambridge Psychometrics Centre has released <a href="http://www.psychometrics.cam.ac.uk/about-us/media-reports/statement-on-politics">a statement</a> to clarify that they are in no way affiliated with Cambridge Analytica.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="fb-api" id="fb-api">Are you using Facebook’s Graph API?</a>
+                    <div class="cd-faq-content">
+                        <p>Data Selfie is not using Facebook’s API. The extension looks at the rendered front-end (the DOM) of the user's Facebook page in the browser – the HTML elements and their content – and with JavaScript the browser extension can detect when you scroll, when you type and when you click something.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="permissions" id="permissions">What permissions does the extension require?</a>
+                    <div class="cd-faq-content">
+                        <p>The extension will ask you for the following permissions: “Read and change your data on api.dataselfie.it and facebook.com” and “Manage your downloads”. The extension needs to be able to monitor activity on facebook.com and change some interface elements, so the user can receives feedback of what is tracked. api.dataselfie.it is the url to make requests for prediction; this permission is necessary in order to communicate with the Data Selfie server and APIs. “Manage your downloads” is for backing up your data into one single file on your computer.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="manage-data" id="manage-data">What can I do with my tracked data?</a>
+                    <div class="cd-faq-content">
+                        <p>You can export your tracked data into a JSON file anywhere on your computer. You can import your tracked data from a JSON file with the same data structure. Finally you can delete your tracked data and the prediction results saved locally in your browser. Note, if you didn't export the data, it's impossible to retrieve that data after you deleted it as there is no record of it on the Data Selfie server. </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="mobile" id="mobile">Will you make a mobile version?</a>
+                    <div class="cd-faq-content">
+                        <p>We recognize that the vast majority of social media usage is done on a mobile device. From the beginning of this project we explored making a mobile version. However, there is no way for us to access Facebook’s native mobile application. (And that is a good thing!) Therefore, the only way to make a mobile version would be to launch our own browser as a native application and implement Data Selfie features. We feel that this approach is not in line with our mission of providing good user experience design. Thus, we have no intention of making a mobile version.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="free" id="free">Is Data Selfie free?</a>
+                    <div class="cd-faq-content">
+                        <p>Data Selfie has been designed as a open source, free tool that aims to create awareness in society about the erosion of privacy and to encourage internet user to be critical thinkers.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="open-source" id="open-source">Is Data Selfie open source?</a>
+                    <div class="cd-faq-content">
+                        <p>Yes! We believe in an open, free, and democratic internet. Our intention with this project is to be totally transparent. Data Selfie will never use your data for research purposes or for commercial purposes as user data is kept in a data base. You can check out our code at our <a href="https://github.com/d4t4x/">GitHub account</a>.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <a class="cd-faq-trigger" ng-click="qLinkClick($event)" data="funding" id="funding">How is Data Selfie funded?</a>
+                    <div class="cd-faq-content">
+                        <p>Data Selfie received funding from the New York City Economic Development Corporation, the Mayor’s Office of Media and Entertainment and the NYC Media Lab through the <a href="http://www.thecombine.nyc/">Combine program</a> in 2016. You can find out more about our overall <a href="#journey">journey</a> that led to the public launch in January 2017.</p>
+                        <p>Continous covering of API costs and maintenance efforts, and the development of new features are made possible by a Flash Grant from the <a href="https://www.shuttleworthfoundation.org">Shuttleworth Foundation</a> and a Media Grant from the <a href="https://www.mozilla.org/">Mozilla Foundation</a>, supported [in part] by a grant from the Open Society Foundations.</p>
+                    </div>
+                </li>
         </ul>
         <!-- cd-faq-group -->
     </div>
     <!-- cd-faq-items -->
-    <div class="cd-faq-items">
-        <h2 id='terms'>BASIC TERMS OF USE</h2>
-        <ul id="basics" class="cd-faq-group">
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" id="terms-accept" data="terms-accept">What are the main terms I accept by using Data Selfie?</a>
-                <div class="cd-faq-content">
-                    <p>In order to use the Data Selfie extension you need to accept the Terms of Use that include all the elements described below in the form of questions and answers.
-                        <br>
-                        <br> Following we list the main permissions you grant us by accepting this Terms of Use:
-                        <br>
-                        <br> &nbsp;1. By accepting the terms of use you grant the browser extension permission to collect the data (specified below) from your Facebook browsing activity, send it to our servers – but not storing it in a data base – to make the API calls and send the results back to your extension.
-                        <br> &nbsp;2. By accepting the terms of use you grant browser extension permission to pass your data to the Apply Magic Sauce and IBM Watson API services. Therefore you accept the terms of use by these third party services:
-                        <br> &nbsp; (a) <a href="https://applymagicsauce.com/business/terms_and_conditions.html">Apply Magic Sauce Terms of Use</a>
-                        <br> &nbsp; (b) <a href="http://www-03.ibm.com/software/sla/sladb.nsf/pdf/6838-03/$file/i126-6838-03_06-2016_en_US.pdf">IBM Watson Personality Insights Terms of Use</a>
-                        <br> &nbsp; (c) <a href="http://www-03.ibm.com/software/sla/sladb.nsf/pdf/0012-04/$file/i128-0012-04_06-2016_en_US.pdf">IBM Watson Alchemy Terms of Use</a>
-                        <br> &nbsp; (d) <a href="http://www-03.ibm.com/software/sla/sladb.nsf/pdf/0024-02/$file/i128-0024-02_09-2016_en_US.pdf">IBM Watson Tone Analyzer Terms of Use</a>
-                        <br>
-                        <br> Data Selfie will not use your data for research purposes or for commercial purposes as we don’t store it in a data base. Only the content that is necessary to make the predictions will be sent to the third-party API Services. We do our best to send as minimal information as possible and will never include intimate or personal information like name, gender, location or birthday, as this is not tracked in the extension. We won’t include your Facebook UserID in our requests to Apply Magic Sauce’s API.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" id="policy-change" data="policy-change">What about changes to the policy?</a>
-                <div class="cd-faq-content">
-                    <p>There is a possibility that we might need to adapt our Privacy Policy in the future, to clarify or modify it in response to our needs and your feedback. Please check the FAQ and Terms of Use periodically for changes. You can refer to the Last updated timestamp at the bottom of the page. We will still do our best to notify you of any major changes to our policy, and your continued use of Data Selfie will mean you accept them.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" id="purpose" data="purpose">What is the purpose of Data Selfie?</a>
-                <div class="cd-faq-content">
-                    <p>The Data Selfie purpose is to create awareness among internet users of the value they generate consciously and unconsciously for online services through the commercial exploitation of their personal information. In particular, Data Selfie provides Facebook users with (1) the kind of data Facebook could be tracking about them and (2) the kind of personality insights Facebook could be generating on them by using machine learning algorithms.
-                        <br>
-                        <br> Data Selfie will not use your data for research purposes or for commercial purposes as we don’t store it in a data base.
-                    </p>
-                </div>
-            </li>
-            <li>
-                <a class="cd-faq-trigger" ng-click="qLinkClick($event)" id="info-back" data="info-back">What information will I receive from the Data Selfie extension?</a>
-                <div class="cd-faq-content">
-                    <p>
-                        Data Selfie will provide the following information:
-                        <br> An aggregated visual overview of your active and passive activity on facebook.com. This includes clicks on likes in your newsfeed, clicks on newsfeed links to external sites, duration spent on different posts and the specifics of those posts (authors, images and text) in your newsfeed, anything you type, time spent on Facebook overall. This information is stored locally in your browser’s directory on your hard drive.
-                        <br>
-                        <br> Based on this information, various predictions are given, this includes but is not limited to predictions personality (Big 5 model), gender, consumer behavior and consumption content topics. As the capabilities of the APIs we are using change, the kinds of predictions that are provided can change in the future. We will update this section accordingly.
-                    </p>
-                </div>
-            </li>
-        </ul>
-        <!-- cd-faq-group -->
-    </div>
-    <!-- cd-faq-items -->
-    <p>Last updated: January 23, 2017</p>
+    <p>Last updated: November 9, 2017</p>
 </section>
 <!-- cd-faq -->
 <a href="#" class="go-top">Go Top</a>

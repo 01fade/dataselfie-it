@@ -35,17 +35,27 @@ ul {
 }
 
 li {
+    margin: 20px 0 10px 0;
+}
+
+.cd-faq-group > li {
     margin: 20px 0 100px 0;
+}
+
+h1 {
+    display: inline-block;
 }
 
 #main a,
 footer a,
-nav li a {
+nav li a,
+h1 {
     color: #000;
     background-color: transparent;
     padding: 0 0 1px 2px;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1em;
 }
 
 #main a:hover,
@@ -60,11 +70,11 @@ nav li a:hover,
 
 footer a,
 nav li a {
-    font-family: Symtext;
+    font-family: Symtext, monospace;
 }
 
 nav ul {
-    font-family: Symtext;
+    font-family: Symtext, monospace;
     padding: 0;
     margin: 0 0 100px 0;
     font-size: 0.8em;
@@ -78,7 +88,8 @@ nav li {
 }
 
 #main a:before,
-nav li a:before {
+nav li a:before,
+h1:before {
     content: ">_";
 }
 
@@ -110,7 +121,7 @@ footer {
 }
 
 i {
-    font-family: Symtext;
+    font-family: Symtext, monospace;
     font-weight: bold;
     font-style: normal;
     font-size: 0.8em;
