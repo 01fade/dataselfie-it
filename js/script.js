@@ -15,7 +15,7 @@
 	        .when('/journey', {
 	            title: 'Journey',
 	            templateUrl: 'pages/journey.html',
-	            controller: 'demoController'
+	            controller: 'journeyController'
 	        })
 	        .when('/download', {
 	            title: 'Download',
@@ -36,6 +36,11 @@
 	            title: 'FAQ',
 	            templateUrl: 'pages/privacy.html',
 	            controller: 'privacyController'
+	        })
+	        .when('/shutdown', {
+	            title: 'FAQ',
+	            templateUrl: 'pages/shutdown.html',
+	            controller: 'shutdownController'
 	        })
 	        .otherwise({
 	            redirectTo: "/"

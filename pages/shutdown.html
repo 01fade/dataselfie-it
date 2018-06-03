@@ -1,0 +1,20 @@
+<div>
+    <p>In the lyrics of a great German song it goes: </p>
+    <blockquote>
+        <b>"Everything has an end only the sausage has two."</b>
+        <br> -
+        <br> "Alles hat ein Ende, nur die Wurst hat zwei."
+        <br> _
+    </blockquote>
+    <p>It's been a great run! More people than I ever could have imagined downloaded and used the extension. And there are still 80 000 people (<a href="https://addons.mozilla.org/en-US/firefox/addon/dataselfie/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/data-selfie/kjmnobfdkgaclpkgeniccafoennghjnm">Chrome</a>) who have it installed. Even if only a a tenth of them are actively checking their dashboard, I feel I have created something that helps people have a real relationship with their online data.</p>
+    <p>Well, this kind of project is a demonstration of what is possible with the algorithms that are available today. No doubt, more advanced ones are out there and are being worked on right now. The question remains: What kind of algorithms and prediction models do we want?</p>
+    <h1>What's gonna happen now?</h1>
+    <p>On July 1, the Data Selfie server will be shut down. The activity timeline and top friends, pages and likes will still show up, but there won't be new predictions anymore, because that is handled by that server. This also means that your data is not lost! In the menu you can still click "Manage Your Data" to export it. This won't change, ever, unless you remove the extension from your browser.</p>
+    <h1>Why are you doing this?</h1>
+    <p>The purpose of the server is to redirect the requests from each user to the external APIs (read more about the APIs in the <a href="#faq">FAQs</a>). So for example for the personality prediction based on what the user has typed, the text is sent to the Data Selfie server, then it redirects that text to IBM Watson, the response comes back to the Data Selfie server and is then sent to the user. No name or ID is captured from the user and therefore the APIs can't tell users apart. Even if they were to look at the IP address of the computer that sent the request they would only see the Data Selfie server IP address. It looks like 1 actor just makes thousands of different requests each month.</p>
+    <p>Another part of the Data Selfie server is also handling the object detection in images (<a href="https://github.com/d4t4x/data-selfie-image-classification">open source code</a> for this). This feature needs a lot of computing power to also not crash when multiple requests are coming in. That's expensive. The server and the APIs cost about $1000 per month, depending on how many users there are.</p>
+    <h1>Is this really the end?</h1>
+    <p>I have thought about this for months, but yes I think so. This project has been my baby ever since I started it as an art experiment in 2016 (here's the whole <a href="#journey">journey</a>). And it's time to tackle new things. To keep updated about new projects (which certainly still have a focus on the issues in our data society), follow me on twitter <a href="https://twitter.com/hangdothiduc">@hangdothiduc</a> or check my website <a href="https://hangdothiduc.de">hangdothiduc.de</a> every now and then.</p>
+    <h1>But wait, can't we just make requests to the APIs ourselves?</h1>
+    <p>Weeell yes, that is true. Now, we are getting technical. Theoretically anyone or a group of people could just sign up for their own API key (<a href="https://applymagicsauce.com/research.html">here</a> or <a href="https://www.ibm.com/watson/services/personality-insights/">here</a>), a small number of requests are also free of charge, and it wouldn't be a big deal to modify the extension so anyone can just plug in their keys. However, I think it's too inconvenient for most people. In addition that wouldn't bring back the image object detection feature. It's complicated! But I am definitely open for people to give me their opinion and ideas - open a public discussion on <a href="https://github.com/d4t4x/data-selfie/issues">GitHub</a> or <a href="https://twitter.com/dataselfie">Twitter</a>.</p>
+</div>

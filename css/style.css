@@ -132,6 +132,13 @@ i {
     font-weight: bold;
 }
 
+.announce {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #000;
+    color: #00FF00;
+}
+
 .video-wrapper {
     position: relative;
     width: 100%;
